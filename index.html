@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <div class="left-section">
+                <div class="nav-logo">
+                    <a href="#" class="nav-logo-link">
+                        <img src="logo.png" alt="">
+                    </a>
+                </div>
+                <div class="global-location">
+                    <div class="location-icon">
+                        <img src="location.png" alt="">
+                    </div>
+                    <div class="location-detail">
+                        <div class="delivey-to">
+                            deliver to
+                        </div>
+                        <div class="location-country">
+                            Pakistan
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="right-section">
+                <img src="cart.png" alt="">
+            </div>
+        </div>
+
+        <div class="middle-section">
+            <form>
+                <div class="nav-centre-left">
+                    All
+                </div>
+
+                <div class="nav-centre-fill">
+                    <input type="text" placeholder="Search Amazon">
+                </div>
+                <div class="nav-centre-right">
+                    <img src="search.png" alt="">
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <div class="second">
+        <div onclick="menus()" class="second-1">
+            <div class="menu-bar">
+                <img src="menu.png" alt="">
+            </div>
+            <span>All</span>
+        </div>
+        <div class="second-2">
+            <ul id="www">
+                <li>Today's Deal</li>
+                <li>Customer service</li>
+                <li>Registry</li>
+                <li>Gift Card</li>
+                <li>Sell</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    let d = document.getElementById('www');
+    function menus() {
+
+        if (d.style.left = '-191px') {
+            d.style.left = '0px';
+        }
+
+        setTimeout(() => {
+            d.style.left = '-191px';
+        }, 5000);
+    }
+</script>
+
+</html>
